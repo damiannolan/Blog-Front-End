@@ -1,7 +1,10 @@
-angular.module('basic_framework').factory('LogicLayer', ['Restangular', 'RepositoryLayer', function (Restangular, RepositoryLayer) {
-    
-    return {
+angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', function (Restangular, RepositoryLayer) {
 
+
+    return {
+        getTasks: function(){
+            return RepositoryLayer.getTasks();
+        }
     }
 
 }]);

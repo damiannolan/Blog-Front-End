@@ -1,10 +1,7 @@
-angular.module('basic_framework').controller('formController', ['$scope', function( $scope, LogicLayer) {
+angular.module('basic_framework').controller('formController', ['$scope', 'LogicLayer', function( $scope, LogicLayer) {
 
-    var data;
-
-    $scope.submit = function(data){
-        console.log(data);
-        this.data = data;
-    };
+    LogicLayer.getTasks().success(function(response){
+        console.log(response);
+    });
 
 }]);
