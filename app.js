@@ -13,7 +13,7 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
         .state('/', {
             url: "/",
-            templateUrl: "index.html"
+            templateUrl: "index.html",
         })
         .state('form', {
             url: "/form",

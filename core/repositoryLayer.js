@@ -1,8 +1,9 @@
-angular.module('basic_framework').factory('RepositoryLayer', ['$http', function (Restangular, $http) {
+angular.module('basic_framework').factory('RepositoryLayer', ['$http', function ($http) {
+
 
     return {
         getTasks: function () {
-            return $http.get('http://127.0.0.1:5000/tasks');
+           return $http.get('http://127.0.0.1:5000/tasks');
         }
     }
 

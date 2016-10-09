@@ -1,7 +1,7 @@
-angular.module('basic_framework').controller('formController', ['$scope', 'LogicLayer', function( $scope, LogicLayer) {
+angular.module('basic_framework').controller('formController', ['LogicLayer', function(LogicLayer) {
 
-    LogicLayer.getTasks().success(function(response){
-        console.log(response);
-    });
+       LogicLayer.getTasks().success(function(response){
+            console.log(response);
+        });
 
 }]);
