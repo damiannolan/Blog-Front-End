@@ -13,11 +13,12 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
         .state('/', {
             url: "/",
-            templateUrl: "index.html",
-        })
-        .state('form', {
-            url: "/form",
-            templateUrl: "form/form.html",
+            templateUrl: "form/templates/form.html",
             controller: "formController"
+        })
+        .state('results', {
+            url: "/results",
+            templateUrl: "form/templates/results.html",
+            controller: "resultsController"
         });
 });
