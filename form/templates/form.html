@@ -1,11 +1,19 @@
 
 <br/>
 <div class="container">
-    <form>
-        <div class="form-group">
-            <label for="enter text">Damos first form</label>
-            <input type="text" class="form-control" id="damos-form" placeholder="Enter Text" ng-model="formData">
-        </div>
-        <button ng-click="submit(formData)" class="btn btn-default">Submit</button>
-    </form>
+    <div class="row">
+        <form class="col-md-8 col-md-offset-2">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" id="damos-form" placeholder="e.g. Sean" ng-model="data.firstName">
+                <br/>
+                <label>Surname</label>
+                <input type="text" class="form-control"  placeholder="e.g. King" ng-model="data.surname">
+                <br/>
+                <label>Age</label>
+                <input type="number" class="form-control" placeholder="e.g. 23" ng-model="data.age">
+            </div>
+            <button ng-click="submit(data)" class="btn btn-default">Submit</button>
+        </form>
+    </div>
 </div>

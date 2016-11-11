@@ -1,11 +1,11 @@
 angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', function (RepositoryLayer) {
 
     return {
-        getTasks: function(){
-            return RepositoryLayer.getTasks();
+        getPeople: function(){
+            return RepositoryLayer.getPeople();
         },
-        postTask: function(data){
-            return RepositoryLayer.postTask(data);
+        postPerson: function(data){
+            return RepositoryLayer.postPerson(data);
         }
     }
 
