@@ -2,7 +2,9 @@ angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', func
 
     return {
         getPeople: function(){
+
             return RepositoryLayer.getPeople();
+
         },
         postPerson: function(data){
             return RepositoryLayer.postPerson(data);
