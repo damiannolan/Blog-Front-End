@@ -8,7 +8,8 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
 
     $scope.submit = function(data){
         console.log(data);
-        LogicLayer.postPerson(data);
-        $location.path('data');
+        LogicLayer.postPerson(data).success(function(){
+            $location.path('data');
+        });
     }
 }]);
