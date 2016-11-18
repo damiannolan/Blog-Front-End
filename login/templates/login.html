@@ -11,6 +11,11 @@
                 <input type="password" class="form-control"  placeholder="e.g. 12345" ng-model="loginDetails.password">
             </div>
             <button ng-click="login()" class="btn btn-default">Submit</button>
+
+                <br/>
+                <br/>
+                <p style="color: red" ng-show="wrongPassword">You have entered the wrong password or username.</p>
         </form>
     </div>
+
 </div>

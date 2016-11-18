@@ -2,7 +2,7 @@ angular.module('basic_framework').controller('loginController', ['LogicLayer' , 
 
     $scope.login = function(){
         checkPassword();
-        if(!wrongPassword)
+        if(!$scope.wrongPassword)
             $location.path('app/form');
     };
 
@@ -13,11 +13,11 @@ angular.module('basic_framework').controller('loginController', ['LogicLayer' , 
 
     function checkPassword(){
         if($scope.loginDetails.password === 'password' && $scope.loginDetails.username === 'username')
-            wrongPassword = false;
+            $scope.wrongPassword = false;
         else
-            wrongPassword = true;
+            $scope.wrongPassword = true;
     }
 
-   var wrongPassword = false;
+   $scope.wrongPassword = false;
 
 }]);
