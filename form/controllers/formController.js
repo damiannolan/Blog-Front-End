@@ -11,5 +11,6 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
         LogicLayer.postPerson(data).success(function(){
             $location.path('data');
         });
-    }
+    };
+    
 }]);

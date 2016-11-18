@@ -2,7 +2,6 @@ angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', func
 
     return {
         getPeople: function(){
-
             return RepositoryLayer.getPeople();
 
         },
