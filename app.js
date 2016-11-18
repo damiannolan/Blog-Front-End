@@ -13,10 +13,21 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
         .state('/', {
             url: "/",
+            templateUrl: "login/templates/login.html",
+            controller: "loginController"
+        })
+        .state('app', {
+            url: "/app",
+            abstract: true,
+            templateUrl: "form/templates/app.html",
+            controller: "appController"
+        })
+        .state('app.form', {
+            url: "/form",
             templateUrl: "form/templates/form.html",
             controller: "formController"
         })
-        .state('data', {
+        .state('app.data', {
             url: "/data",
             templateUrl: "form/templates/data.html",
             controller: "resultsController"
