@@ -5,10 +5,10 @@
         <form class="col-md-8 col-md-offset-2">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" class="form-control" id="damos-form" placeholder="e.g. FantasticUsernameBro" >
+                <input type="password" class="form-control" id="damos-form" placeholder="e.g. FantasticUsernameBro" ng-model="loginDetails.username">
                 <br/>
                 <label>Password</label>
-                <input type="text" class="form-control"  placeholder="e.g. 12345">
+                <input type="password" class="form-control"  placeholder="e.g. 12345" ng-model="loginDetails.password">
             </div>
             <button ng-click="login()" class="btn btn-default">Submit</button>
         </form>
