@@ -1,5 +1,5 @@
 
-var app = angular.module("basic_framework", ['ui.router', 'ngResource', 'restangular']);
+var app = angular.module("basic_framework", ['ui.router', 'ngResource', 'restangular', 'base64']);
 
 app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 

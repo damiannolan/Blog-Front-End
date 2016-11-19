@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "restangular": "^1.5.2",
-    "angular-mocks": "^1.5.8"
+    "angular-mocks": "^1.5.8",
+    "angular-base64": ""
   }
 }
