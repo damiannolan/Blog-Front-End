@@ -16,4 +16,20 @@
             <button ng-click="submit(data)" class="btn btn-default">Submit</button>
         </form>
     </div>
+
+    <br />
+
+    <table class="table table-striped">
+        <tr>
+            <th ng-click="click()">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="result in results">
+            <td>{{result.firstName}}</td>
+            <td>{{result.surname}}</td>
+            <td>{{result.age}}</td>
+        </tr>
+    </table>
+
 </div>

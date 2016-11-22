@@ -26,10 +26,5 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
             url: "/form",
             templateUrl: "form/templates/form.html",
             controller: "formController"
-        })
-        .state('app.data', {
-            url: "/data",
-            templateUrl: "form/templates/data.html",
-            controller: "resultsController"
         });
 });
