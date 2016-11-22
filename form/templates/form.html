@@ -25,7 +25,7 @@
             <th>Lastname</th>
             <th>Age</th>
         </tr>
-        <tr ng-repeat="result in results">
+        <tr ng-repeat="result in results" ng-click="delete(result)">
             <td>{{result.firstName}}</td>
             <td>{{result.surname}}</td>
             <td>{{result.age}}</td>
