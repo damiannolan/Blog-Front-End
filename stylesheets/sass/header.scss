@@ -1,0 +1,63 @@
+$input-background: transparent;
+$logo-font: 'Permanent Marker', cursive;
+$button1-color: #86909e;
+$button2-color: #ffffff;
+$main-bg-color: #36465d;
+
+
+#nav-parent{
+  background-color: transparent;
+  height: 10% !important;
+  border: none !important;
+
+  a{
+    color: $theme-color !important;
+    font-size: 3em;
+    font-family: $logo-font;
+  }
+
+  form{
+      display: inline-block;
+      padding: 0;
+      margin-top: .8%;
+      float: left;
+      width: 45%;
+      margin-left: 1%;
+  }
+
+  input {
+    border: none !important;
+    border-radius: 3.5px !important;
+    height: 35px !important;
+    font-size: 1.1em !important;
+  }
+
+
+  button{
+    border: none !important;
+    border-radius: 2.5px !important;
+    height: 35px !important;
+    color: white;
+    margin-top: .8%;
+    float: right;
+  }
+
+}
+
+
+#form-parent{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+.btn-1{
+  background-color: $button1-color !important;
+  margin-right: 5px;
+}
+
+.btn-2{
+  background-color: $button2-color !important;
+  color: $main-bg-color !important;
+}
