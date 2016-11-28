@@ -2,7 +2,7 @@
 <br/>
 <div class="container">
     <div class="row">
-        <form id="user-input-field" class="col-md-5 col-md-offset-1">
+        <form id="user-input-field" class="col-md-6 col-md-offset-1">
                 <input type="text" placeholder="Title" ng-model="data.firstName">
                 <textarea rows="5" cols="30" type="text" class="form-control" id="damos-form" placeholder="Write your thoughts here..." ng-model="data.surname"></textarea>
             <button ng-click="submit(data)" class="btn btn-default">Submit</button>
@@ -12,12 +12,15 @@
     <br />
 
     <div class="row">
-        <div id="comments" class="col-md-5 col-md-offset-1" >
+        <div id="comments" class="col-md-6 col-md-offset-1" >
             <div class="comment-container" ng-repeat="result in results" ng-click="delete(result)">
                 <h1 ng-click="delete(result)">{{result.firstName}}</h1>
-                <h3>{{result.firstName}}</h3>
                 <p>{{result.surname}}</p>
             </div>
+        </div>
+        <div id="about-me" class="">
+            <h2>Damian Nolan</h2>
+            <p>This is the best blog that has ever beeen created. I made it myself and it is so awesome that I don't know how to harmabe myself.</p>
         </div>
     </div>
 
