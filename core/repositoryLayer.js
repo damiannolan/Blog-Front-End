@@ -1,14 +1,14 @@
 angular.module('basic_framework').factory('RepositoryLayer', ['$http', function ($http) {
 
     return {
-        getPeople: function () {
+        getEntries: function () {
            return $http.get('http://127.0.0.1:5000/entries');
         },
-        postPerson: function (data) {
-            return $http.post('http://127.0.0.1:5000/entries', data, { headers: {'Content-Type': 'application/json'}});
+        postEntry: function (entry) {
+            return $http.post('http://127.0.0.1:5000/entries', entry, { headers: {'Content-Type': 'application/json'}});
         },
-        deletePerson: function (result) {
-            return $http.delete('http://127.0.0.1:5000/entries/delete/' + result._id.$oid);
+        deleteEntry: function (entry) {
+            return $http.delete('http://127.0.0.1:5000/entries/delete/' + entry._id.$oid);
         }
     }
 }]);

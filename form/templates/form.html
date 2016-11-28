@@ -3,9 +3,9 @@
 <div class="container">
     <div class="row">
         <form id="user-input-field" class="col-md-6 col-md-offset-1">
-                <input type="text" placeholder="Title" ng-model="data.firstName">
-                <textarea rows="5" cols="30" type="text" class="form-control" id="damos-form" placeholder="Write your thoughts here..." ng-model="data.surname"></textarea>
-            <button ng-click="submit(data)" class="btn btn-default">Submit</button>
+                <input type="text" placeholder="Title" ng-model="entry.title">
+                <textarea rows="5" cols="30" type="text" class="form-control" id="damos-form" placeholder="Write your thoughts here..." ng-model="entry.body"></textarea>
+            <button ng-click="submit(entry)" class="btn btn-default">Submit</button>
         </form>
     </div>
 
@@ -13,9 +13,9 @@
 
     <div class="row">
         <div id="comments" class="col-md-6 col-md-offset-1" >
-            <div class="comment-container" ng-repeat="result in results" ng-click="delete(result)">
-                <h1 ng-click="delete(result)">{{result.firstName}}</h1>
-                <p>{{result.surname}}</p>
+            <div class="comment-container" ng-repeat="entry in entries" ng-click="delete(entry)">
+                <h1 ng-click="delete(entry)">{{entry.title}}</h1>
+                <p>{{entry.body}}</p>
             </div>
         </div>
         <div id="about-me" class="">

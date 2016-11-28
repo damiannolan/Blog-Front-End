@@ -3,20 +3,21 @@ angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', '$q'
     //Assign the scope of LogicLayer factory to a variable LogicLayer
     var LogicLayer = this;
 
-    LogicLayer.people = {};
+    LogicLayer.entries = {};
 
-    LogicLayer.getAllPeople = function() {
+    LogicLayer.getAllEntries = function() {
 
         var deferred = $q.defer();
 
-        RepositoryLayer.getPeople().then(function(response){
+        RepositoryLayer.getEntries().then(function(response){
             //success
             //log the response object to the console
             console.log(response);
 
             //Assign the response data to new object to get rid of unnecessary data
-            LogicLayer.people = response.data;
-            deferred.resolve(LogicLayer.people);
+            LogicLayer.entries = response.data;
+
+            deferred.resolve(LogicLayer.entries);
         }).catch(function(error){
             deferred.reject(error);
         });
@@ -24,13 +25,14 @@ angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', '$q'
         return deferred.promise;
     };
 
-    LogicLayer.addPerson = function(data) {
+    LogicLayer.addEntry = function(entry) {
 
         var deferred = $q.defer();
 
-        RepositoryLayer.postPerson(data).then(function(response){
+        RepositoryLayer.postEntry(entry).then(function(response){
             //success
             console.log("Successfully posted person");
+
             deferred.resolve(response);
         }).catch(function(error){
             deferred.reject(error);
@@ -39,13 +41,15 @@ angular.module('basic_framework').factory('LogicLayer', ['RepositoryLayer', '$q'
         return deferred.promise;
     };
 
-    LogicLayer.delete = function(result) {
+    LogicLayer.delete = function(entry) {
+
         var deferred = $q.defer();
 
-        RepositoryLayer.deletePerson(result).then(function(response){
+        RepositoryLayer.deleteEntry(entry).then(function(response){
             //success
             console.log(response);
             console.log("Successfully deleted person");
+
             deferred.resolve(response);
         }).catch(function(error){
             console.log(error);
