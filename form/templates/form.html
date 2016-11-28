@@ -16,6 +16,7 @@
             <div class="comment-container" ng-repeat="entry in entries" ng-click="delete(entry)">
                 <h1 ng-click="delete(entry)">{{entry.title}}</h1>
                 <p>{{entry.body}}</p>
+                <span style="float: right; padding: 10px">{{entry.time}}</span>
             </div>
         </div>
         <div id="about-me" class="">

@@ -2,7 +2,8 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
 
     $scope.entry = {
         title: "",
-        body: ""
+        body: "",
+        time: ""
     };
 
     $scope.entries = [];
@@ -17,6 +18,9 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
             console.log("Success Get");
             console.log(LogicLayer.entries);
             $scope.entries = LogicLayer.entries;
+
+            $scope.calcTimeAgo();
+
         }, function(error){
             //error
             console.log("error");
@@ -25,6 +29,10 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
     };
 
     $scope.submit = function(entry) {
+
+        //Assign new Date for blog entry
+        entry.time = new Date();
+
         LogicLayer.addEntry(entry).then(function(response){
             //success
             console.log("Success Post");
@@ -51,6 +59,24 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
         }, function(error){
            //error
         });
+    };
+
+    $scope.calcTimeAgo = function () {
+
+        for (var i in $scope.entries) {
+            //Loop through the entries array and calculate the time in 'time ago' format using moment.js
+            //Reference: https://snipt.net/raw/4925edfae1dc174d5e7dfeb4c07ed6f6/?nice
+
+            var now = new Date();
+            //Wrap the dates using moment
+            var nowWrapper = moment(now);
+            var pastDateWrapper = moment($scope.entries[i].time);
+            //Calculate the displayDate using .from()
+            var displayDate = pastDateWrapper.from(nowWrapper);
+
+            //console.log(displayDate);
+            $scope.entries[i].time = displayDate;
+        }
     };
 
     $scope.init();
