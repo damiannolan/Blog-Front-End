@@ -30,6 +30,13 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
 
     $scope.submit = function(entry) {
 
+        //Prevent users from posting entries without having a title and body
+        if($scope.entry.title == "" || $scope.entry.body == "")
+        {
+            alert("Cannot submit empty entry!");
+            return;
+        }
+
         //Assign new Date for blog entry
         entry.time = new Date();
 
