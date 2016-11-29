@@ -9,16 +9,19 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
     $scope.entries = [];
 
     $scope.init = function() {
+        //Create function init() to be called every time the page is loaded which calls $scope.getAll()
         $scope.getAll();
     };
 
     $scope.getAll = function() {
+
         LogicLayer.getAllEntries().then(function(response){
             //success
             console.log("Success Get");
             console.log(LogicLayer.entries);
             $scope.entries = LogicLayer.entries;
 
+            //Call $scope.calcTimeAgo to convert time to format 'seconds/minutes ago'
             $scope.calcTimeAgo();
 
         }, function(error){
@@ -44,7 +47,7 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
             //success
             console.log("Success Post");
 
-            //Call $scope.getAll() to update the table
+            //Call $scope.getAll() to update the data
             $scope.getAll();
 
             //Clear the input fields
@@ -60,8 +63,11 @@ angular.module('basic_framework').controller('formController', ['LogicLayer' , '
     };
 
     $scope.delete = function(entry) {
+
         LogicLayer.delete(entry).then(function(response){
             //success
+
+            //Reload the data by calling $scope.getAll()
             $scope.getAll();
         }, function(error){
            //error

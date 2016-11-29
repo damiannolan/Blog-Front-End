@@ -1,5 +1,7 @@
 angular.module('basic_framework').factory('RepositoryLayer', ['$http', function ($http) {
 
+    //Repository Layer acts as a factory for specifying endpoints for $http requests
+
     return {
         getEntries: function () {
            return $http.get('http://127.0.0.1:5000/entries');
@@ -12,5 +14,3 @@ angular.module('basic_framework').factory('RepositoryLayer', ['$http', function 
         }
     }
 }]);
-
-
