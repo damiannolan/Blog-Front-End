@@ -25,6 +25,11 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
         .state('app.form', {
             url: "/form",
             templateUrl: "form/templates/form.html",
+            resolve: {
+                entries: function(LogicLayer) {
+                    return LogicLayer.getAllEntries();
+                }
+            },
             controller: "formController"
         });
 });
