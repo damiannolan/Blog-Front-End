@@ -13,7 +13,7 @@
 
     <div class="row">
         <div id="comments" class="col-md-6 col-md-offset-1" >
-            <div class="comment-container" ng-repeat="entry in entries" ng-click="delete(entry)">
+            <div class="comment-container" ng-repeat="entry in entries | filter: searchText" ng-click="delete(entry)">
                 <h1 ng-click="delete(entry)">{{entry.title}}</h1>
                 <p>{{entry.body}}</p>
                 <span style="float: right; padding: 10px">{{entry.time}}</span>
