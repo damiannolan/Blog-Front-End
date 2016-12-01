@@ -29,7 +29,13 @@ To get started head on over to the [Back End Respository](https://github.com/sea
 
         npm install
 
-3. Use Webstorm or your favourite IDE to launch index.html
+3. Launch index.html in Webstorm
+
+4. Login using the mock login
+
+        Username: username
+
+        Password: password
 
 ### Dependencies
 
