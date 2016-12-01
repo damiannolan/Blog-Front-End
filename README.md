@@ -18,7 +18,7 @@ The application features the ability to retrieve, create and delete blog posts u
 - Sean King
 
 A large portion of this project was done using 'Pair Programming', an Agile Software Development technique in which two
-programming work together at one workstation.
+programmers work together at one workstation.
 We felt this was an effective workflow as we both got to understand the full scope of the project.
 
 To get started head on over to the [Back End Respository](https://github.com/seantking/Blog-back-end) and get setup!
