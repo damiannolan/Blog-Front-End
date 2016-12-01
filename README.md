@@ -17,6 +17,10 @@ The application features the ability to retrieve, create and delete blog posts u
 - Damian Nolan
 - Sean King
 
+### Model
+
+![alt text](http://i.imgur.com/nByY6Lo.png)
+
 To get started head on over to the [Back End Respository](https://github.com/seantking/Blog-back-end) and get setup!
 
 ## Installation
