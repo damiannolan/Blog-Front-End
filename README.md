@@ -17,6 +17,20 @@ The application features the ability to retrieve, create and delete blog posts u
 - Damian Nolan
 - Sean King
 
+To get started head on over to the [Back End Respository](https://github.com/seantking/Blog-back-end) and get setup!
+
+## Installation
+
+1. Clone the repository
+
+2. Install prerequisites
+
+        bower install
+
+        npm install
+
+3. Use Webstorm or your favourite IDE to launch index.html
+
 ### Dependencies
 
 - [AngularJS](https://angularjs.org/)
