@@ -70,6 +70,12 @@ A gulp file has been created in order to automate certain tasks. Typing 'gulp wa
 - Like/Upvote feature
 - Ability to subscribe/follow to multiple users
 
+### Bugs
+
+- Seed posts not displaying correctly
+- Moment.js being used incorrectly. Can display wrong times. 
+
+
 ### Screenshots
 
 ![alt text](http://i.imgur.com/rVmkQR0.jpg)
