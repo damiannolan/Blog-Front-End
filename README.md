@@ -33,7 +33,7 @@ To get started head on over to the [Back End Respository](https://github.com/sea
 
         npm install
 
-3. Launch index.html in Webstorm
+3. Type 'gulp watch' into the command line from the base directory in order to start the program 
 
 4. Login using the mock login
 
@@ -51,3 +51,24 @@ To get started head on over to the [Back End Respository](https://github.com/sea
 ### Model
 
 ![alt text](http://i.imgur.com/nByY6Lo.png)
+
+### Architecture
+
+In terms of architecture we focused on creating loosely coupled components that can be easily understood and tested. A large emphasis was placed on structuring the directory in such a way that each UI component is entirely encapsulated within a directory containing all javascript, templates and sass files that the component needs to run effectively. 
+
+We decided on AngularJS for the front-end and Flask for the backend. Both frameworks allow for quick setup and have extensive libraries and documentation available.
+
+### Developer guidelines
+
+A gulp file has been created in order to automate certain tasks. Typing 'gulp watch' into the command line from within the root directory will launch the project via localhost port specified within the gulp.js file. Saving any file will relaunch the browser and show changes automatically. When a SCSS file changes gulp will compile the SCSS file into CSS and minify each CSS file. The gulp file has been created in such a way that new tasks can be added with ease. It is suggested that you modify the gulp file to your own needs. 
+
+### Suggestions for additional features
+
+- Login with real authentication 
+- Additional users 
+- Testing framework added in order to test each component 
+- User profiles
+- Like feature
+- Ability to subscripe to multiple users 
+
+
