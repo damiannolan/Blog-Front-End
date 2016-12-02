@@ -23,10 +23,6 @@ We felt this was an effective workflow as we both got to understand the full sco
 
 To get started head on over to the [Back End API](https://github.com/seantking/Blog-back-end) and get setup!
 
-### Screenshots 
-
-![alt text](http://i.imgur.com/rVmkQR0.jpg)
-
 ## Installation
 
 1. Clone the repository
@@ -71,7 +67,11 @@ A gulp file has been created in order to automate certain tasks. Typing 'gulp wa
 - Additional users 
 - Testing framework added in order to test each component 
 - User profiles
-- Like feature
-- Ability to subscripe to multiple users 
+- Like/Upvote feature
+- Ability to subscribe/follow to multiple users
+
+### Screenshots
+
+![alt text](http://i.imgur.com/rVmkQR0.jpg)
 
 
