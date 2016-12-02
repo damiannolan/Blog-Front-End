@@ -41,13 +41,6 @@ To get started head on over to the [Back End API](https://github.com/seantking/B
 
         Password: password
 
-### Dependencies
-
-- [AngularJS](https://angularjs.org/)
-- [Bootstrap](http://getbootstrap.com/)
-- [Gulp](http://gulpjs.com/)
-- [Moment](http://momentjs.com/)
-
 ### Model
 ![alt text](http://i.imgur.com/nByY6Lo.png)
 
