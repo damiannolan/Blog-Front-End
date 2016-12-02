@@ -21,7 +21,7 @@ A large portion of this project was done using 'Pair Programming', an Agile Soft
 programmers work together at one workstation.
 We felt this was an effective workflow as we both got to understand the full scope of the project.
 
-To get started head on over to the [Back End Respository](https://github.com/seantking/Blog-back-end) and get setup!
+To get started head on over to the [Back End API](https://github.com/seantking/Blog-back-end) and get setup!
 
 ### Screenshots 
 
