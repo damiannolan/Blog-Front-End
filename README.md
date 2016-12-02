@@ -23,6 +23,10 @@ We felt this was an effective workflow as we both got to understand the full sco
 
 To get started head on over to the [Back End Respository](https://github.com/seantking/Blog-back-end) and get setup!
 
+### Screenshots 
+
+![alt text](http://i.imgur.com/rVmkQR0.jpg)
+
 ## Installation
 
 1. Clone the repository
@@ -49,7 +53,6 @@ To get started head on over to the [Back End Respository](https://github.com/sea
 - [Moment](http://momentjs.com/)
 
 ### Model
-
 ![alt text](http://i.imgur.com/nByY6Lo.png)
 
 ### Architecture
