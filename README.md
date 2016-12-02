@@ -74,4 +74,5 @@ A gulp file has been created in order to automate certain tasks. Typing 'gulp wa
 
 ![alt text](http://i.imgur.com/rVmkQR0.jpg)
 
+![alt text](http://i.imgur.com/KjJw97o.png)
 
