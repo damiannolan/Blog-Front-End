@@ -4,13 +4,13 @@ angular.module('basic_framework').factory('RepositoryLayer', ['$http', function 
 
     return {
         getEntries: function () {
-           return $http.get('http://127.0.0.1:5000/entries');
+           return $http.get('http://127.0.0.1:8080/api/entries');
         },
         postEntry: function (entry) {
-            return $http.post('http://127.0.0.1:5000/entries', entry, { headers: {'Content-Type': 'application/json'}});
+            return $http.post('http://127.0.0.1:8080/api/entries', entry, { headers: {'Content-Type': 'application/json'}});
         },
         deleteEntry: function (entry) {
-            return $http.delete('http://127.0.0.1:5000/entries/delete/' + entry._id.$oid);
+            return $http.delete('http://127.0.0.1:8080/api/entries/' + entry._id);
         }
     }
 }]);
